@@ -34,13 +34,9 @@ $ node
 # returns undefined
 ```
 #### Design Decisions
-Before I started the problem I had a few things in mind that I wanted to accomplish. I wanted to create an application that had the ability to extend easily, such that the addition of new features/business logic or new objects would affect as little of the rest of the code base as possible. I also wanted to application to adhere to the SOLID principles as much as possible - in particular single responsibility.
-
-I was also keen to ensure that this code base was well tested, I have TDDed this from start to end.
-
-As stated read queries should be quick, hence I have used a dictionary (Javascript has no hashmap) and made sure that all the processing was done on `loadConfig`.
-
-I also wanted the application to have as little dependencies on third party libraries.
+- ability to extend easily
+- read queries should be quick, hence I have used a dictionary (Javascript has no hashmap) and made sure that all the processing was done on `loadConfig`.
+- as little dependencies on third party libraries.
 
 |File|Design Decision|
 |---|---|
